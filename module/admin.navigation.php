@@ -1,5 +1,8 @@
 <?php
 $path = "template/admin/";
+$regions = region::fetch($conn);
+cmbo_region($regions);
+exit;
 if(!isset($_SESSION['role'])){
     echo"session no";
 }else{
@@ -62,6 +65,15 @@ if(!isset($_SESSION['role'])){
             $res =  membership::fetch($conn,$_GET['id']);
             require($path."form.php");
         break;
+
+        case"new.region";
+            require($path."form.php");
+        break;
+
+        case"regions";
+            require($path."regions.php");
+        break;
+
     }
 }
 

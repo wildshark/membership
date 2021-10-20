@@ -1,7 +1,12 @@
 <?php
 
-$_SESSION['auth'] = true;
-$_SESSION['start'] = time();
-$_SESSION['expire'] = $_SESSION['start'] + (30 * 60); //session for 30min
+
+
+function cmbo_region($regions){
+
+    foreach($regions as $i){
+        echo "<option value='{$i['region_id']}'>{$i['region_title']}</option>";
+    }
+}
 
 ?>

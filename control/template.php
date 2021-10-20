@@ -7,34 +7,19 @@ function menu($token){
             <!-- <img src='assets/images/logo.png' alt='' /> --><span>Qus Account</span></a></div>
         <li class='label'>Main</li>
         <li><a href='?_page=dashboard&token={$token}'><i class='ti-bookmark-alt'></i> Dashboard </a></li>
-
-        <li class='label'>Financial Transaction</li>
-        <li><a class='sidebar-sub-toggle'><i class='ti-book'></i> Books <span
-                class='sidebar-collapse-icon ti-angle-down'></span></a>
+        <li><a class='sidebar-sub-toggle'><i class='ti-book'></i> Membership <span class='sidebar-collapse-icon ti-angle-down'></span></a>
         <ul>
-            <li><a href='?_page=income&token={$token}'>Income transaction</a></li>
-            <li><a href='?_page=expenses&token={$token}'>Expenses Transaction</a></li>
-            <li><a href='?_page=cash&token={$token}'>Cash Book</a></li>
-            <li><a href='?_page=bank&token={$token}'>Bank Book</a></li>
-            <!--li><a href='?_page=payroll&token={$token}'>Payroll</a></li-->
+            <li><a href='?_admin=new.member&token={$token}'> Add</a></li>
+            <li><a href='?_admin=membership&token={$token}'>List</a></li>
         </ul>
         </li>
-        <li><a href='#' data-toggle='modal' data-target='#incomeModalCenter'><i class='ti-download'></i> Income </a></li>
-        <li><a href='#' data-toggle='modal' data-target='#expensesModalCenter'><i class='ti-upload'></i> Expenses</a></li>
-        <li><a class='sidebar-sub-toggle'><i class='ti-home'></i> Report <span
-                class='sidebar-collapse-icon ti-angle-down'></span></a>
+        <li><a class='sidebar-sub-toggle'><i class='ti-book'></i> Region <span class='sidebar-collapse-icon ti-angle-down'></span></a>
         <ul>
-            <li><a href='?_page=ledger&token={$token}'> Ledgers</a></li>
-            <li><a href='?_page=report&token={$token}'> Finanical Report</a></li>
+            <li><a href='?_admin=new.region&token={$token}'> Add</a></li>
+            <li><a href='?_admin=regions&token={$token}'>List</a></li>
         </ul>
-        <!--li><a href='#' data-toggle='modal' data-target='#exampleModalCenter'><i class='ti-email'></i> Financal Report</a></li-->
-
-        <li><a class='sidebar-sub-toggle'><i class='ti-settings'></i> Setting <span
-                class='sidebar-collapse-icon ti-angle-down'></span></a>
-        <ul>
-            <li><a href='?_page=category&token={$token}'> category</a></li>
-            <!--li><a href='?_page=user&token={$token}'>User </a></li-->
-        </ul>
+        </li>
+        
         </li>
 
         <li><a><i class='ti-close'></i> Help</a></li>
