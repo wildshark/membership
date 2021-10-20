@@ -1,0 +1,34 @@
+{
+    "application":"Crypto-Exchange",
+    "version":"1.0.0.1",
+    "developer":"iQuipe Digital",
+    "language":"en",
+    "license":{
+        "key":"",
+        "signature":""
+    },
+    "config":{
+        "model":"offline",
+        "db_conn":"mypdo",
+        "db_sqlite":{
+            "db_name":""
+        },
+        "db_mysql":{
+            "host":"localhost",
+            "username":"root",
+            "password":"",
+            "port":"",
+            "db_name":"membership"
+        },
+        "flutter":{
+            "publickey":"",
+            "pravitekey":""
+        },
+        "sms":{
+            "username":"",
+            "password":"",
+            "key":"",
+            "token":""
+        }
+    }
+}
