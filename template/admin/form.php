@@ -262,176 +262,119 @@
                             <div class="card">
                                 <div class="card-title">
                                     <h4>Basic Elements</h4>
-                                    
                                 </div>
                                 <div class="card-body">
                                     <div class="basic-elements">
-                                        <form>
+                                        <form method="post" action="index.php">
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Full Name</label>
-                                                        <input type="text" class="form-control" value="Some text value...">
+                                                        <input type="text" name="full_name"  required="required" class="form-control" value="<?=$r['full_name'] ?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label>Gender</label>
+                                                        <select class="form-control" name="gender" required="required">
+                                                            <option><?=$r["gender"]?></option>
+                                                            <option>Male</option>
+															<option>Female</option>														
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    <div class="form-group">
+                                                        <label>Region</label>
+                                                        <select class="form-control" name="region" required="required">
+                                                            <option value="<?=$r["region_id"]?>"><?=$r["region_title"]?></option>
+                                                            <?=cmbo_region($regions)?>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="form-group">
+                                                        <label>Phone number 1</label>
+                                                        <input class="form-control" name="mobile1" type="text" required="required" value="<?= $r["mobile1"]?>">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Email</label>
-                                                        <input id="example-email" class="form-control" type="email" placeholder="Email" name="example-email">
+                                                        <label> Phone number 2 </label>
+                                                        <input class="form-control" type="text" name="mobile2"  value="<?= $r["mobile2"]?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label> Level of education  </label>
+                                                        <input class="form-control" type="text" name="level_education" required="required" value="<?=$r["level_education"]?>">
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-group">
+                                                        <label> What do you want the ndc to do for you, being job or appointment. Name the it, be specific with your answer </label>
+                                                        <textarea class="form-control" rows="3" name="job_appointment" placeholder="Text input"><?= $r["job_appointment"]?></textarea>
+                                                    </div>
+                                                    
+                                                   
+                                                    <div class="form-group">
+                                                        <label> Do you support BMB? </label>
+                                                        <select class="form-control" name="support_bmb" required="required" >
+                                                            <option><?=$r["support_bmb"]?></option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>                                                       
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Password</label>
-                                                        <input class="form-control" type="password" value="password">
+                                                        <label> Current occupation </label>
+                                                        <input class="form-control" type="text" name="occupation" value="<?=$r["occupation"]?>">
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label>Text area</label>
-                                                        <textarea class="form-control" rows="3" placeholder="Text input"></textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Readonly</label>
-                                                        <input class="form-control" type="text" value="Readonly value" readonly="">
-                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
 
+                                                    <div class="form-group">
+                                                        <label>Bmb membership number </label>
+                                                        <input  class="form-control" name="bmb_number"  value="<?= $r["bmb_number"]?>" type="text" placeholder="BMB number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Date of Birth</label>
+                                                        <input class="form-control" type="date" name="dob" required="required" value="<?=$r["dob"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Branch  </label>
+                                                        <input class="form-control" type="text" name="branch" required="required" value="<?=$r["branch"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Constituency </label>
+                                                        <input class="form-control" type="text" name="constituency" required="required" value="<?=$r["constituency"]?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label> Indicate your old voter id </label>
+                                                        <input class="form-control" type="text" name="old_voter_id" value="<?=$r["old_voter_id"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Indicate your new voter id no. </label>
+                                                        <input class="form-control" type="text" name="new_voter_id" value="<?=$r["new_voter_id"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Do you have ndc membership card? </label>
+                                                        <select class="form-control" name="memberrship_card">
+                                                            <option><?=$r["memberrship_card"]?></option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>                                                        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Indicate your number </label>
+                                                        <input class="form-control" type="text" name="card_number" value="<?=$r["card_number"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> In your own understand, what strategies should the ndc implement to win 2024 election? </label>
+                                                        <textarea class="form-control" rows="3" name="strategies" placeholder="Text input"><?=$r["strategies"]?></textarea>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
-                                                        <label>Disabled</label>
-                                                        <input class="form-control" type="text" value="Disabled value" disabled="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Static control</label>
-                                                        <p class="form-control-static">email@example.com</p>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Helping text</label>
-                                                        <input class="form-control" type="text" placeholder="Helping text">
-                                                        <span class="help-block">
-														<small>A block of help text that breaks onto a new line and may extend beyond one line.</small>
-													</span>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Input Select</label>
-                                                        <select class="form-control">
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-															<option>5</option>
-														</select>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Multiple Select</label>
-                                                        <select multiple class="form-control">
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-															<option>5</option>
-														</select>
-                                                    </div>
-                                                </div>
+                                                <button type="submit" class="btn btn-primary" name="_submit" value="<?=$btn?>">Submit</button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- /# column -->
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-title">
-                                    <h4>Horizontal Form Elements</h4>
-                                    
-                                </div>
-                                <div class="card-body">
-                                    <div class="horizontal-form-elements">
-                                        <form class="form-horizontal">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Text Input</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control" value="Some text value...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Email</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="email" class="form-control" placeholder="Email">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Password</label>
-                                                        <div class="col-sm-10">
-                                                            <input class="form-control" type="password" value="password">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Text Area</label>
-                                                        <div class="col-sm-10">
-                                                            <textarea class="form-control" rows="3" placeholder="Text input"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Readonly</label>
-                                                        <div class="col-sm-10">
-                                                            <input class="form-control" type="text" value="Readonly value" readonly="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Disabled</label>
-                                                        <div class="col-sm-10">
-                                                            <input class="form-control" type="text" value="Disabled value" disabled="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- /# column -->
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Static Control</label>
-                                                        <div class="col-sm-10">
-                                                            <p class="form-control-static">email@example.com</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Helping text</label>
-                                                        <div class="col-sm-10">
-                                                            <input class="form-control" type="text" placeholder="Helping text">
-                                                            <span class="help-block">
-																<small>A block of help text that breaks onto a new line and may extend beyond one line.</small>
-															</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Input Select</label>
-                                                        <div class="col-sm-10">
-                                                            <select class="form-control">
-																<option>1</option>
-																<option>2</option>
-																<option>3</option>
-																<option>4</option>
-																<option>5</option>
-															</select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Multiple Select</label>
-                                                        <div class="col-sm-10">
-                                                            <select multiple class="form-control">
-																<option>1</option>
-																<option>2</option>
-																<option>3</option>
-																<option>4</option>
-																<option>5</option>
-															</select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- /# column -->
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /# card -->
                         </div>
                         <!-- /# column -->
                     </div>

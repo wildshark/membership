@@ -14,7 +14,7 @@ if(!isset($_REQUEST["_submit"])){
                 $q[] = $_REQUEST['username'];
                 $response = usern::login($conn,$q);
                 if($response === false){
-                    $url["_user"] = "lgoin";    
+                    $url["_user"] = "login";    
                }else{
                    if(!isset($_SESSION['username'])){
                        $_SESSION = $response;
@@ -23,10 +23,10 @@ if(!isset($_REQUEST["_submit"])){
                     $_SESSION['token'] = $token;
                     if($response['role'] === "admin"){
                         $url['_admin'] = "dashboard";
-                        $url['token'] = $token;
+                        $url['token'] = $_SESSION['token'];
                     }else{
                         $url['_client'] = "dashboard";
-                        $url['token'] = $token;
+                        $url['token'] = $_SESSION['token'];
                     } 
                }
             }elseif($_action === "register"){
@@ -38,12 +38,58 @@ if(!isset($_REQUEST["_submit"])){
 
         case"membership";
             if($_action ==="add"){
-
+                $r[]=$_REQUEST['full_name'];
+                $r[]=$_REQUEST["bmb_number"];
+                $r[]=$_REQUEST["gender"];
+                $r[]=$_REQUEST["dob"];
+                $r[]=$_REQUEST["region"];
+                $r[]=$_REQUEST["constituency"];
+                $r[]=$_REQUEST["branch"];
+                $r[]=$_REQUEST["mobile1"];
+                $r[]=$_REQUEST["mobile2"];
+                $r[]=$_REQUEST["level_education"];
+                $r[]=$_REQUEST["new_voter_id"];
+                $r[]=$_REQUEST["old_voter_id"];
+                $r[]=$_REQUEST["job_appointment"];
+                $r[]=$_REQUEST["memberrship_card"];
+                $r[]=$_REQUEST["card_number"];
+                $r[]=$_REQUEST["support_bmb"];
+                $r[]=$_REQUEST["occupation"];
+                $r[]=$_REQUEST["strategies"];
+                $response = membership::add($conn,$r);
             }elseif($_action ==="update"){
-
+                $r[]=$_REQUEST['full_name'];
+                $r[]=$_REQUEST["bmb_number"];
+                $r[]=$_REQUEST["gender"];
+                $r[]=$_REQUEST["dob"];
+                $r[]=$_REQUEST["region"];
+                $r[]=$_REQUEST["constituency"];
+                $r[]=$_REQUEST["branch"];
+                $r[]=$_REQUEST["mobile1"];
+                $r[]=$_REQUEST["mobile2"];
+                $r[]=$_REQUEST["level_education"];
+                $r[]=$_REQUEST["new_voter_id"];
+                $r[]=$_REQUEST["old_voter_id"];
+                $r[]=$_REQUEST["job_appointment"];
+                $r[]=$_REQUEST["memberrship_card"];
+                $r[]=$_REQUEST["card_number"];
+                $r[]=$_REQUEST["support_bmb"];
+                $r[]=$_REQUEST["occupation"];
+                $r[]=$_REQUEST["strategies"];
+                $r[]=$_SESSION['membership_id'];
+                $response = membership::add($conn,$r);
             }elseif($_action ==="delete"){
 
             }
+            if($response == false){
+                $url['_admin'] = "dashboard";
+                $url['token'] = $_SESSION['token'];
+                $url['e'] = 100;
+            }else{
+                $url['_admin'] = "dashboard";
+                $url['token'] = $_SESSION['token'];
+                $url['e'] = 200;
+            } 
         break;
 
         case"region";

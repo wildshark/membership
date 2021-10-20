@@ -1,7 +1,5 @@
 <?php
 
-
-
 function cmbo_region($regions){
 
     foreach($regions as $i){

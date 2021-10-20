@@ -59,19 +59,28 @@ class membership{
 
     public static function fetch($conn){
 
-        $sql ="SELECT * FROM `tbl_person_data` LIMIT 0,1000";
+        $sql ="SELECT tbl_person_data.*, tbl_region.region_title FROM tbl_person_data INNER JOIN tbl_region ON tbl_person_data.region_id = tbl_region.region_id ORDER BY tbl_person_data.person_id DESC";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 
         return $stmt->fetchAll();
-
     }
 
-    public static function view($conn,$r){
+    public static function view($conn,$id){
 
-        $sql ="SELECT * FROM `tbl_person_data` WHERE `person_id` =? LIMIT 0,1000";
+        $sql ="SELECT
+        tbl_person_data.*, 
+        tbl_region.region_title
+    FROM
+        tbl_person_data
+        INNER JOIN
+        tbl_region
+        ON 
+            tbl_person_data.region_id = tbl_region.region_id
+    WHERE
+        tbl_person_data.person_id = ?";
         $stmt = $conn->prepare($sql);
-        $stmt->bindParam(1,$r[0]);
+        $stmt->bindParam(1,$id);
 
         $stmt->execute();
 
@@ -80,6 +89,15 @@ class membership{
 
     }
 
+    public static function total($conn){
+
+        $sql ="SELECT count(tbl_person_data.person_id) as total FROM tbl_person_data";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+
+        $row = $stmt->fetch();
+        return $row['total'];
+    }
     public static function delete(){
 
         $sql ="DELETE FROM `membership`.`tbl_person_data` WHERE `person_id` =?";
