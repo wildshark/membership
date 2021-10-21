@@ -13,7 +13,7 @@ switch($_REQUEST['page']){
     break;
 
     case"admin-login";
-
+        require("template/login.php");
     break;
 
 }
