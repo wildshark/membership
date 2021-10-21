@@ -44,6 +44,7 @@ if(!isset($_REQUEST["_submit"])){
                 }else{
                     $c[] = $member_id;
                     $c[] = $_REQUEST['full-name'];
+                    $c[] = $_REQUEST['region'];
                     if(false == usern::add_member_id($conn,$c)){
                         $url['page'] = "register";
                         $url['rgg'] = http_build_query($_REQUEST);

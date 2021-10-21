@@ -30,10 +30,11 @@ class usern{
 
     public static function add_member_id($conn,$r){
 
-        $sql="INSERT INTO `tbl_person_data`(`mem_id`, `full_name`) VALUES (?,?)";
+        $sql="INSERT INTO `tbl_person_data`(`member_id`, `full_name`, `region_id`) VALUES (?,?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(1,$r[0]);
         $stmt->bindParam(2,$r[1]);
+        $stmt->bindParam(3,$r[2]);
 
         return $stmt->execute();
     }

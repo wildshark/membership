@@ -59,6 +59,13 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
+                                        <select class="form-control" name="region">
+                                            <?=cmbo_region($regions)?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
                                         <input class="form-control" type="email" name="email" placeholder="email address">
                                     </div>
                                 </div>

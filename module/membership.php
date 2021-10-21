@@ -99,6 +99,7 @@ class membership{
         $row = $stmt->fetch();
         return $row['total'];
     }
+    
     public static function delete(){
 
         $sql ="DELETE FROM `membership`.`tbl_person_data` WHERE `person_id` =?";

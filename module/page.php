@@ -3,6 +3,7 @@
 switch($_REQUEST['page']){
 
     case"register";
+        $regions = region::fetch($conn);
         require("template/register.php");
     break;
 
