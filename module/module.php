@@ -24,10 +24,12 @@ if(!isset($_REQUEST["_submit"])){
                     if($response['role'] === "admin"){
                         $url['_admin'] = "dashboard";
                         $url['token'] = $_SESSION['token'];
+                        $_SESSION['user_role'] ="admin";
                     }else{
                         $url['_client'] = "dashboard";
                         $url['member']= $response['member_id'];
                         $url['token'] = $_SESSION['token'];
+                        $_SESSION['user_role'] ="client";
                     } 
                }
             }elseif($_action === "register"){
@@ -100,20 +102,39 @@ if(!isset($_REQUEST["_submit"])){
                 $r[]=$_REQUEST["support_bmb"];
                 $r[]=$_REQUEST["occupation"];
                 $r[]=$_REQUEST["strategies"];
-                $r[]=$_SESSION['membership_id'];
-                $response = membership::add($conn,$r);
+                $r[]= $_SESSION['membership_id'];
+                
+                $response = membership::update($conn,$r);
+                
             }elseif($_action ==="delete"){
 
             }
-            if($response == false){
-                $url['_admin'] = "dashboard";
-                $url['token'] = $_SESSION['token'];
-                $url['e'] = 100;
+
+            if($_SESSION['user_role'] ==="admin"){
+                if($response == false){
+                    $url['_admin'] = "dashboard";
+                    $url['token'] = $_SESSION['token'];
+                    $url['e'] = 100;
+                }else{
+                    $url['_admin'] = "dashboard";
+                    $url['token'] = $_SESSION['token'];
+                    $url['e'] = 200;
+                } 
+
             }else{
-                $url['_admin'] = "dashboard";
-                $url['token'] = $_SESSION['token'];
-                $url['e'] = 200;
-            } 
+
+                if($response == false){
+                    $url['_client'] = "dashboard";
+                    $url['member'] =$_SESSION['member'];
+                    $url['token'] = $_SESSION['token'];                    
+                    $url['e'] = 100;
+                }else{
+                    $url['_client'] = "dashboard"; 
+                    $url['member'] =$_SESSION['member'];
+                    $url['token'] = $_SESSION['token'];                   
+                    $url['e'] = 200;
+                } 
+            }
         break;
 
         case"region";

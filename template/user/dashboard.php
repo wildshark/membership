@@ -86,7 +86,7 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
                         <!-- Notification -->
-                        <li class="nav-item dropdown">
+                        <!--li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
                                 id="bell" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
@@ -96,9 +96,9 @@
                             <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
                                 <ul class="list-style-none">
                                     <li>
-                                        <div class="message-center notifications position-relative">
+                                        <div class="message-center notifications position-relative"-->
                                             <!-- Message -->
-                                            <a href="javascript:void(0)"
+                                            <!--a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
                                                 <div class="btn btn-danger rounded-circle btn-circle"><i
                                                         data-feather="airplay" class="text-white"></i></div>
@@ -109,9 +109,9 @@
                                                         admin!</span>
                                                     <span class="font-12 text-nowrap d-block text-muted">9:30 AM</span>
                                                 </div>
-                                            </a>
+                                            </a-->
                                             <!-- Message -->
-                                            <a href="javascript:void(0)"
+                                            <!--a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
                                                 <span class="btn btn-success text-white rounded-circle btn-circle"><i
                                                         data-feather="calendar" class="text-white"></i></span>
@@ -122,9 +122,9 @@
                                                         a reminder that you have event</span>
                                                     <span class="font-12 text-nowrap d-block text-muted">9:10 AM</span>
                                                 </div>
-                                            </a>
+                                            </a-->
                                             <!-- Message -->
-                                            <a href="javascript:void(0)"
+                                            <!--a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
                                                 <span class="btn btn-info rounded-circle btn-circle"><i
                                                         data-feather="settings" class="text-white"></i></span>
@@ -136,9 +136,9 @@
                                                         as you want</span>
                                                     <span class="font-12 text-nowrap d-block text-muted">9:08 AM</span>
                                                 </div>
-                                            </a>
+                                            </a-->
                                             <!-- Message -->
-                                            <a href="javascript:void(0)"
+                                            <!--a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
                                                 <span class="btn btn-primary rounded-circle btn-circle"><i
                                                         data-feather="box" class="text-white"></i></span>
@@ -148,23 +148,23 @@
                                                         see the my admin!</span>
                                                     <span class="font-12 text-nowrap d-block text-muted">9:02 AM</span>
                                                 </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
+                                            </a-->
+                                        <!--/div-->
+                                    <!--/li-->
+                                    <!--li-->
+                                        <!--a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
                                             <strong>Check all notifications</strong>
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </li>
-                                </ul>
-                            </div>
-                        </li>
+                                </ul-->
+                            <!--/div>
+                        </li-->
                         <!-- End Notification -->
                         <!-- ============================================================== -->
                         <!-- create new -->
                         <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
+                        <!--li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i data-feather="settings" class="svg-icon"></i>
@@ -188,7 +188,7 @@
                                     </select>
                                 </div>
                             </a>
-                        </li>
+                        </li-->
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -217,7 +217,7 @@
                                 <img src="assets/user/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                        class="text-dark"><?=$r['full_name']?></span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -235,12 +235,9 @@
                                         class="svg-icon mr-2 ml-1"></i>
                                     Account Setting</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                <a class="dropdown-item" href="?_user=off"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
-                                    Logout</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
-                                        Profile</a></div>
+                                    Logout</a>                              
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -266,7 +263,7 @@
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
+                        <!--li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
@@ -471,7 +468,7 @@
                                     class="hide-menu">Documentation</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
-                                    class="hide-menu">Logout</span></a></li>
+                                    class="hide-menu">Logout</span></a></li-->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -491,24 +488,24 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Form Input Grid</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Membership Form</h4>
                         <div class="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
+                            <!--nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
                                     <li class="breadcrumb-item"><a href="index.html" class="text-muted">Home</a></li>
                                     <li class="breadcrumb-item text-muted active" aria-current="page">Library</li>
                                 </ol>
-                            </nav>
+                            </nav-->
                         </div>
                     </div>
                     <div class="col-5 align-self-center">
-                        <div class="customize-input float-right">
+                        <!--div class="customize-input float-right">
                             <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
                             </select>
-                        </div>
+                        </div-->
                     </div>
                 </div>
             </div>
@@ -527,1070 +524,113 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Horizontal Grid</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="1">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-11">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-2">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-3">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-9">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-4">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-8">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-5">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-7">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grid With Row Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="1">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-11">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-2">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-3">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-9">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-4">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-8">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-5">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-7">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Row Label </label>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grid With Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="1">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-11">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-11">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-2">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-3">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-9">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-4">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-8">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-5">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-7">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Right Offset</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-12">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-11">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-11">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-9">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-8">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-7">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-5">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-3">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-1">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-left">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Left Offset</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-12">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-11 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-11 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-10 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-9 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-9 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-8 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-7 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-7 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-6 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-5 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-5 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-4 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-3 ml-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-2 ml-auto0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-1 ml-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="11">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Centered Input</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-12">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10 m-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-10 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8 m-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-8 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 m-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-6 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 m-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-4 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2 m-auto">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-2 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-4 text-right">Label</label>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-3 text-right">Label</label>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-6">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2 text-right">Label</label>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-8">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-1 text-right">Label</label>
-                                            <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="col-md-10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Centered Input with Default label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control" placeholder="col-md-12">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10 m-auto">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-10 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-9 m-auto">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-8 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 m-auto">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-6 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 m-auto">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-4 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-2 m-auto">
-                                                <div class="form-group">
-                                                    <label>Label</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="col-md-2 m-auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions mt-4">
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grid With Row Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="form-group">
+                                <form method="post" action="index.php">
                                             <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-1">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-1">
-                                                        </div>
-                                                        <div class="col-md-11">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-11">
-                                                        </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Full Name</label>
+                                                        <input type="text" name="full_name"  required="required" class="form-control" value="<?=$r['full_name'] ?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label>Gender</label>
+                                                        <select class="form-control" name="gender" required="required">
+                                                            <option><?=$r["gender"]?></option>
+                                                            <option>Male</option>
+															<option>Female</option>														
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    <div class="form-group">
+                                                        <label>Region</label>
+                                                        <select class="form-control" name="region" required="required">
+                                                            <option value="<?=$r["region_id"]?>"><?=$r["region_title"]?></option>
+                                                            <?=cmbo_region($regions)?>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="form-group">
+                                                        <label>Phone number 1</label>
+                                                        <input class="form-control" name="mobile1" type="text" required="required" value="<?= $r["mobile1"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Phone number 2 </label>
+                                                        <input class="form-control" type="text" name="mobile2"  value="<?= $r["mobile2"]?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label> Level of education  </label>
+                                                        <input class="form-control" type="text" name="level_education" required="required" value="<?=$r["level_education"]?>">
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="form-group">
+                                                        <label> What do you want the ndc to do for you, being job or appointment. Name the it, be specific with your answer </label>
+                                                        <textarea class="form-control" rows="3" name="job_appointment" placeholder="Text input"><?= $r["job_appointment"]?></textarea>
+                                                    </div>
+                                                    
+                                                   
+                                                    <div class="form-group">
+                                                        <label> Do you support BMB? </label>
+                                                        <select class="form-control" name="support_bmb" required="required" >
+                                                            <option><?=$r["support_bmb"]?></option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>                                                       
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Current occupation </label>
+                                                        <input class="form-control" type="text" name="occupation" value="<?=$r["occupation"]?>">
                                                     </div>
                                                 </div>
+                                                <div class="col-lg-6">
+
+                                                    <div class="form-group">
+                                                        <label>Bmb membership number </label>
+                                                        <input  class="form-control" name="bmb_number"  value="<?= $r["bmb_number"]?>" type="text" placeholder="BMB number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Date of Birth</label>
+                                                        <input class="form-control" type="date" name="dob" required="required" value="<?=$r["dob"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Branch  </label>
+                                                        <input class="form-control" type="text" name="branch" required="required" value="<?=$r["branch"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Constituency </label>
+                                                        <input class="form-control" type="text" name="constituency" required="required" value="<?=$r["constituency"]?>">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <label> Indicate your old voter id </label>
+                                                        <input class="form-control" type="text" name="old_voter_id" value="<?=$r["old_voter_id"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Indicate your new voter id no. </label>
+                                                        <input class="form-control" type="text" name="new_voter_id" value="<?=$r["new_voter_id"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Do you have ndc membership card? </label>
+                                                        <select class="form-control" name="memberrship_card">
+                                                            <option><?=$r["memberrship_card"]?></option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>                                                        
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Indicate your number </label>
+                                                        <input class="form-control" type="text" name="card_number" value="<?=$r["card_number"]?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> In your own understand, what strategies should the ndc implement to win 2024 election? </label>
+                                                        <textarea class="form-control" rows="3" name="strategies" placeholder="Text input"><?=$r["strategies"]?></textarea>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary" name="_submit" value="<?=$btn?>">Submit</button>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-2">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-2">
-                                                        </div>
-                                                        <div class="col-md-10">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-10">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-3">
-                                                        </div>
-                                                        <div class="col-md-9">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-9">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-4">
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-8">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-5">
-                                                        </div>
-                                                        <div class="col-md-7">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-7">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-lg-1">Label</label>
-                                                <div class="col-lg-11">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-6">
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-6">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grid With Inline Input Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-2">
-                                                        </div>
-                                                        <label class="col-md-4">Label </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="row">
-                                                        <label class="col-md-4 text-right">Label </label>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-10">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-3">
-                                                        </div>
-                                                        <label class="col-md-4">Label </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <div class="row">
-                                                        <label class="col-md-4 text-right">Label </label>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-9">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-4">
-                                                        </div>
-                                                        <label class="col-md-4">Label </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="row">
-                                                        <label class="col-md-4 text-right">Label </label>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-8">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-5">
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-5">
-                                                        </div>
-                                                        <label class="col-md-4">Label </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7">
-                                                    <div class="row">
-                                                        <label class="col-md-4 text-right">Label </label>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-7">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="row">
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-6">
-                                                        </div>
-                                                        <label class="col-md-4">Label </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="row">
-                                                        <label class="col-md-4 text-right">Label </label>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="col-md-6">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Multiple Input With Default Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <label>Label </label>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="First Input &amp; First Row">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="First Input &amp; Second Row">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Second Input &amp; First Row">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Second Input &amp; Second Row">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label>Multiple width Input Label</label>
-                                        <div class="row">
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="First Input &amp; First Row">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Second Input &amp; First Row">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="First Input &amp; Second Row">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Second Input &amp; Second Row">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Multiple Input With Inline Label</h4>
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="form-group row">
-                                            <label class="col-md-2">Label </label>
-                                            <div class="col-md-10">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="First Input &amp; First Row">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="First Input &amp; Second Row">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Second Input &amp; First Row">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Second Input &amp; Second Row">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-md-2">Multiple width Input Label </label>
-                                            <div class="col-md-10">
-                                                <div class="row">
-                                                    <div class="col-md-7">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="First Input &amp; First Row">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-5">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Second Input &amp; First Row">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="First Input &amp; Second Row">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Second Input &amp; Second Row">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-actions">
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                            <button type="reset" class="btn btn-dark">Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                        </form>
                             </div>
                         </div>
                     </div>
