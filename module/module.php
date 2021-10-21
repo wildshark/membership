@@ -11,7 +11,7 @@ if(!isset($_REQUEST["_submit"])){
         case"user";
             if($_action === "login"){
                 $q[] = $_REQUEST['username'];
-                $q[] = $_REQUEST['username'];
+                $q[] = $_REQUEST['password'];
                 $response = usern::login($conn,$q);
                 if($response === false){
                     $url["_user"] = "login";    
@@ -26,14 +26,37 @@ if(!isset($_REQUEST["_submit"])){
                         $url['token'] = $_SESSION['token'];
                     }else{
                         $url['_client'] = "dashboard";
+                        $url['member']= $response['member_id'];
                         $url['token'] = $_SESSION['token'];
                     } 
                }
             }elseif($_action === "register"){
+                $member_id = time();
+                $q[] = $member_id;
+                $q[] = $_REQUEST['full-name'];
+                $q[] = $_REQUEST['email'];
+                $q[] = $_REQUEST['password'];
+                $q[] = "client";
+                $response = usern::add($conn,$q);
+                if($response == false){
+                    $url['page'] = "register";
+                    $url['rgg'] = http_build_query($_REQUEST);
+                }else{
+                    $c[] = $member_id;
+                    $c[] = $_REQUEST['full-name'];
+                    if(false == usern::add_member_id($conn,$c)){
+                        $url['page'] = "register";
+                        $url['rgg'] = http_build_query($_REQUEST);
+                    }else{
+                        $url['page'] = "user-login";
+                        $url['regg'] = "user-success";
+                    }
+                } 
 
             }elseif($_action === "recovery"){
 
             }
+
         break;
 
         case"membership";

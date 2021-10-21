@@ -41,18 +41,21 @@ if(!file_exists($_CONFIG)){
             header('location:index.php');
         }else{
             if(!isset($_REQUEST['_submit'])){
-                if(!isset($_REQUEST['_admin'])){
-                    if(!isset($_REQUEST['_client'])){
-                        session_destroy();
-                        require("template/login.php");
-                        exit;
+                if(!isset($_REQUEST['page'])){
+                    if(!isset($_REQUEST['_admin'])){
+                        if(!isset($_REQUEST['_client'])){
+                            session_destroy();
+                            require("template/user/login.php");
+                            exit;
+                        }else{
+                            require("module/client.navigation.php");
+                        }
                     }else{
-                        require("module/client.navigation.php");
+                        require("module/admin.navigation.php");
                     }
                 }else{
-                    require("module/admin.navigation.php");
+                    require("module/page.php");
                 }
-                
             }else{
                 require("module/module.php");
                 header("location: ?".http_build_query($url));

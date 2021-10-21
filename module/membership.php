@@ -68,17 +68,18 @@ class membership{
 
     public static function view($conn,$id){
 
-        $sql ="SELECT
-        tbl_person_data.*, 
-        tbl_region.region_title
-    FROM
-        tbl_person_data
-        INNER JOIN
-        tbl_region
-        ON 
-            tbl_person_data.region_id = tbl_region.region_id
-    WHERE
-        tbl_person_data.person_id = ?";
+        $sql ="SELECT tbl_person_data.*, tbl_region.region_title FROM tbl_person_data INNER JOIN tbl_region ON tbl_person_data.region_id = tbl_region.region_id WHERE tbl_person_data.person_id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(1,$id);
+
+        $stmt->execute();
+
+        return $stmt->fetch();
+    }
+
+    public static function fetch_member_id($conn,$id){
+
+        $sql ="SELECT tbl_person_data.*, tbl_region.region_title FROM tbl_person_data INNER JOIN tbl_region ON tbl_person_data.region_id = tbl_region.region_id WHERE tbl_person_data.member_id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(1,$id);
 
