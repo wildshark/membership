@@ -21,13 +21,13 @@
     <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
 
     <!-- Styles -->
-    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/lib/data-table/buttons.bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
-    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/lib/helper.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/admin/css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/admin/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/admin/css/lib/data-table/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/admin/css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="assets/admin/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/admin/css/lib/helper.css" rel="stylesheet">
+    <link href="assets/admin/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                                         <ul>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/3.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Mr. John</div>
@@ -77,7 +77,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/3.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Mariam</div>
@@ -87,7 +87,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/3.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Tasnim</div>
@@ -97,7 +97,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/3.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Mr. John</div>
@@ -127,7 +127,7 @@
                                         <ul>
                                             <li class="notification-unread">
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/1.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/1.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Michael Qin</div>
@@ -137,7 +137,7 @@
                                             </li>
                                             <li class="notification-unread">
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/2.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Mr. John</div>
@@ -147,7 +147,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/3.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Michael Qin</div>
@@ -157,7 +157,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
+                                                    <img class="pull-left m-r-10 avatar-img" src="assets/admin/images/avatar/2.jpg" alt="" />
                                                     <div class="notification-content">
                                                         <small class="notification-timestamp pull-right">02:34 PM</small>
                                                         <div class="notification-heading">Mr. John</div>
@@ -327,26 +327,26 @@
     </div>
 
     <!-- jquery vendor -->
-    <script src="assets/js/lib/jquery.min.js"></script>
-    <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
+    <script src="assets/admin/js/lib/jquery.min.js"></script>
+    <script src="assets/admin/js/lib/jquery.nanoscroller.min.js"></script>
     <!-- nano scroller -->
-    <script src="assets/js/lib/menubar/sidebar.js"></script>
-    <script src="assets/js/lib/preloader/pace.min.js"></script>
+    <script src="assets/admin/js/lib/menubar/sidebar.js"></script>
+    <script src="assets/admin/js/lib/preloader/pace.min.js"></script>
     <!-- sidebar -->
     
     <!-- bootstrap -->
 
-    <script src="assets/js/lib/bootstrap.min.js"></script><script src="assets/js/scripts.js"></script>
+    <script src="assets/admin/js/lib/bootstrap.min.js"></script><script src="assets/admin/js/scripts.js"></script>
     <!-- scripit init-->
-    <script src="assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="assets/js/lib/data-table/buttons.flash.min.js"></script>
-    <script src="assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="assets/js/lib/data-table/pdfmake.min.js"></script>
-    <script src="assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="assets/js/lib/data-table/datatables-init.js"></script>
+    <script src="assets/admin/js/lib/data-table/datatables.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/buttons.flash.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/jszip.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/pdfmake.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/vfs_fonts.js"></script>
+    <script src="assets/admin/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/buttons.print.min.js"></script>
+    <script src="assets/admin/js/lib/data-table/datatables-init.js"></script>
 
 </body>
 
